@@ -70,3 +70,14 @@ dev.off()
 # PCA Output All
 pca_out <- prcomp(data[, output_cor_all])
 summary(pca_out)
+
+png(paste0(thesis_url, 'Media/Benchmarking/Output_Variances.png'), width = 500, height = 500)
+screeplot(pca_out,
+          type = "l", 
+          npcs = length(output_cor_all),
+          main = paste0("Screeplot of the PC variances") )
+dev.off()
+
+png(paste0(thesis_url, 'Media/Benchmarking/Output_Biplot.png'), width = 500, height = 500)
+ggbiplot(pca_out, labels = uni)
+dev.off()
