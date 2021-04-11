@@ -35,6 +35,8 @@ output_PCA_full <- as.matrix(data[, output_cols_PCA_full], ncol = 1)
 plot.new()
 png(paste0(thesis_url, 'Media/Benchmarking/DEA_Frontier.png'), width = 600, height = 600)
 dea.plot.frontier(input, output, txt = as.matrix(uni, col = 1), GRID = TRUE, xlab = "Summed Inputs", ylab = "Summed Outputs")
+dea.plot.isoquant(input[7, ], input[8, ], txt = as.matrix(uni, col = 1), GRID = TRUE, xlab = "X1", ylab = "X2")
+dea.plot.transform(output[3, ], output[5, ], txt = as.matrix(uni, col = 1), GRID = TRUE, xlab = "X1", ylab = "X2")
 dev.off()
 
 
@@ -75,17 +77,6 @@ summary(dea_mult_add)
 
 
 
-# DEA PLOTS
-#png(paste0(thesis_url, 'Media/Benchmarking/DEA_frontier.png'), width = 600, height = 600)
-#dea.plot(input, output, txt = uni, ORIENTATION = "in-out", GRID = TRUE, add = TRUE, xlab = "Inputs", ylab = "Outputs")
-
-
-dea.plot(input, output, txt = uni, GRID = TRUE, add = TRUE, xlab = "Inputs", ylab = "Outputs")
-#dev.off()
-#dea.plot.isoquant(input, output)
-#dea.plot.transform(input, output)
-
-
 # SFA WITH SINGLE OUTPUT | FINAL
 sfa_model_multiple_full <- sfa(input_PCA, output_PCA_full)
 summary(sfa_model_multiple_full)
@@ -99,7 +90,7 @@ png(paste0(thesis_url, 'Media/Benchmarking/SFA_scores.png'), width = 600, height
 ggplot(sfa_uni_multiple_full, aes(reorder(University, Score), Score)) +
   geom_point() +
   labs(x = "University",
-       y = "Score")
+       y = "Efficiency Score")
 dev.off()
 
 
