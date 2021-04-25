@@ -77,7 +77,7 @@ diff-match-patch @ file:///home/conda/feedstock_root/build_artifacts/diff-match-
 dill==0.3.2
 distlib==0.3.1
 distributed @ file:///Users/runner/miniforge3/conda-bld/distributed_1604508050001/work
-Django==3.1.2
+Django==3.1.8
 dnspython==2.0.0
 docutils @ file:///Users/runner/miniforge3/conda-bld/docutils_1602628180670/work
 ecos==2.0.7.post1
