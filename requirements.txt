@@ -150,7 +150,7 @@ HeapDict==1.0.1
 helpdev @ file:///home/conda/feedstock_root/build_artifacts/helpdev_1604871301491/work
 html5lib @ file:///home/conda/feedstock_root/build_artifacts/html5lib_1592930327044/work
 htmlmin==0.1.12
-httplib2==0.18.1
+httplib2==0.19.0
 idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1593328102638/work
 ImageHash @ file:///home/conda/feedstock_root/build_artifacts/imagehash_1605809872811/work
 imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1594044661732/work
