@@ -318,7 +318,7 @@ requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1605186911
 requests-oauthlib==1.3.0
 retrying==1.3.3
 rope @ file:///home/conda/feedstock_root/build_artifacts/rope_1602094471915/work
-rsa==4.6
+rsa==4.7
 Rtree @ file:///Users/runner/miniforge3/conda-bld/rtree_1605197045646/work
 ruamel-yaml-conda @ file:///Users/runner/miniforge3/conda-bld/ruamel_yaml_1602430345474/work
 ruamel.yaml==0.16.12
